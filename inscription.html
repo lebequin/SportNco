@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sport N co</title>
+        <link type= "text/css" href="forme.css" rel="stylesheet" media="all"/>
+    </head>
+    <body>
+		<header>
+        <h1> Sport n co</h1>
+		<nav class="navbar">
+			<ul class="menu">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="inscription.html">Inscription</a></li>
+				<li><a href="planning.html">Planning des activitées</a></li>
+				<li><a href="tarif.html">Tarifs</a></li>
+				<li><a href="#">Média</a>
+					<ul class="submenu">
+						<li><a href="photo.html">Photos</a></li>
+						<li><a href="video.html">Videos</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+        <img src="photo/img.png"/> </br>
+        </header>
+		<div class="row">
+			<div class="infogLarge">
+				<h2>Formulaire d'inscription</h2>
+				<form class="login-form" method="POST" action="contact.php">
+						<input class="txtb" type="text"  placeholder="nom" name="nom" required/> </br>
+						<input class="txtb" type="email" placeholder="email" name="email" required/> </br>
+						<input class="txtb" type="tel"  placeholder="telephone (facultatif)" name="tel"/></br>
+						<select name="activité choisie">
+							<option value="sabre">sabre</option>
+							<option value="fleuret">fleuret</option>
+							<option value="épée">Epée</option>
+						</select></br>
+						<select name="créneau">
+							<option value="lundi">Lundi 19h-21h</option>
+							<option value="lundi">Lundi 22h-24h</option>
+							<option value="mercredi">Mercredi 19h-21h</option>
+							<option value="mercredi">Mercredi 22h-24h</option>
+							<option value="vendredi">Vendredi 19h-21h</option>
+							<option value="vendredi">Vendredi 22h-24h</option>
+						</select></br>
+						Premiere demande </br>
+						<input type="radio" value="oui" name="premiere">oui</input>
+						<input type="radio" value="non" name="premiere">non</input></br>
+						<input class="txtb" type="textarea" placeholder="Votre message" name="message" required/>
+						<input class="login-btn"type="submit" name="submit"/>
+					</form>
+			</div>
+		</div>
+		<footer>Léo Béquin et Théotime Monteix groupe 6</footer>     
+	</body>
+</html>

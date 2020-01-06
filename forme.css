@@ -1,0 +1,240 @@
+
+/* ----------------------- CSS général -----------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    background-color: #092327;
+    box-shadow: 3px 4px 5px #092327;
+    margin : auto;
+    padding: 20px;
+    font-size: 4em;
+    font-family: OutRun Future;
+    border-bottom-color: white;
+    border-bottom: solid 1px;
+    text-shadow: 3px 4px 5px red;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.infog{
+    background-color: #4E8098;
+    text-align: center;
+    flex-direction: column;
+    flex: 80%;
+    padding: 20px;
+    margin:10px;
+    /*margin-left: auto;
+    margin-right: auto;
+    width : 78%;*/
+}
+.side {
+
+    border-top: 1px  dotted white;
+    border-left: 1px  dotted white;
+    border-bottom: 1px  dotted white;
+    border-radius: 15px;
+    flex: 20%;
+    padding: 10px;
+    margin:10px;
+    height: 400px;
+    /*
+    width: 20%;
+    float: right;
+    */
+}
+
+#button-top{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+.networks {
+     position: fixed;
+     right: 0px;
+     top:20%;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+/* ------------------------- PAGE PLANNING --------------------*/
+.infogLarge{
+    background-color: #4E8098;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex:auto;
+}
+.tab{
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+}
+body{
+    background-color: #90C2E7;
+    margin: 0;
+    color: white;
+}
+
+a {
+    font-size: 1.3em;
+}
+.suite{
+    display:none;
+}
+
+.lire_la_suite:hover .lien_suite {
+    display:none;
+}
+
+.lire_la_suite:hover .suite {
+    display:inline;
+}
+
+/*---------------------Page photo-----------------*/
+
+
+figcaption
+{
+margin-bottom: 200px;
+text-align: center;
+}
+
+.photos
+{
+display:block;
+position:relative;
+height:5%;
+width:5%
+}
+
+#photo1
+{
+display:none
+}
+
+#agrandir1:hover #Mphoto1{display:none;}
+
+#agrandir1:hover #photo1{display:block;}
+
+figcaption
+{
+display:block;
+position:relative;
+}
+
+/* --------------------------------PAGE VIDEO-------------------------------*/
+video{
+  width: 70%;
+}
+.figvideo{
+    text-align: center;
+    padding: 20px;
+}
+figure{
+   text-align: center;
+}
+
+
+/* ------------------------------ MENU DE NAVIGATION -----------------------------------*/
+nav {
+    background-image: linear-gradient(to right, #092327, #293539);
+    display: flex;
+    box-shadow: 3px 4px 5px #092327;
+}
+nav > ul
+{
+	margin : 0px;
+	padding : 0px;
+}
+
+nav > ul::after
+{
+	content:"";
+	display: block;
+	clear : both;
+}
+nav > ul > li
+{
+	float : left;
+	position : relative;
+}
+
+nav > ul > li > a
+{
+	padding : 20px 30px;
+	color : white;
+}
+nav > ul > li:not(:last-child){
+    border-right: 1px dotted white;
+}
+nav a
+{
+	display : inline-block;
+	text-decoration : none;
+}
+
+.submenu
+{
+	display : none;
+}
+
+.submenu li a
+{
+	padding : 10px 30px;
+	font-size : 1em;
+	color : white;
+	width : 270px;
+}
+nav li:hover .submenu
+{
+	display : inline-block;
+	position : absolute;
+    background-image: linear-gradient(to right, #092327, #293539);
+	top : 100%;
+    width: 150px;
+	left : 0px;
+	padding : 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+    .side {
+
+        border: 1px  dotted #092327;
+        border-radius: 15px;
+        padding: 10px;
+        margin:10px;
+        /*
+        width: 20%;
+        float: right;
+        */
+    }
+}
+
+/*  bleu ciel #90C2E7
+    bleu mer #4E8098
+    bleu nuit #092327 */
